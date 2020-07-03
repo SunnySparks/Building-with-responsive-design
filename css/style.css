@@ -61,6 +61,45 @@
     height: 240px;
 }
 
+.latest-fund-article {
+    width: 100%;
+    margin: 5px;
+    border: 1px solid orange;
+}
+
+.latest-fund {
+    width: 100%;
+    height: 40px;
+    background-color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.latest-fund-nav {
+    width: 100%;
+    /*height: 100px;
+    background-color: indianred;*/
+}
+
+.latest-fund-nav li {
+    width: 100%;
+    height: 20px;
+    background-color: sandybrown;
+    margin-bottom: 4px;
+}
+
+.funders {
+    width: 100%;
+    height: 230px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.funders-hidden {
+    display: none;
+}
+
+/*-------HERE START THE MEDIA QUERIES----------*/
+
 @media screen and (max-width: 764px) {
     .top-header {
         display: none;
@@ -96,6 +135,47 @@
     .latest-news-items-text {
         width: 98%;
         height: 50%;
+    }
+
+    .latest-fund-article, .funders-container {
+        width: 60%;
+        border: 1px solid orange;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20px;
+    }
+    
+    .latest-fund {
+        float:left;
+        width: 60%;
+        height: 60px;
+        background-color: goldenrod;
+    }
+    
+    .latest-fund-nav {
+        float: right;
+        width: 35%;
+    }
+    
+    .latest-fund-nav ul, .funders-container {
+        display: flex;
+    }
+
+    .latest-fund-nav li {
+        height: 60px;
+        background-color: sandybrown;
+        list-style-type: none;
+    }
+
+    .funders, .funders-hidden {
+        width: 100%;
+        height: 230px;
+        background-color: red;
+        margin: 12px;
+    }
+
+    .funders-hidden {
+        display: inline;
     }
 
 }
