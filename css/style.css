@@ -17,11 +17,14 @@
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px 5px 5px 5px;
 }
 
-.main-art-top,
+.main-art-top {
+    height: 240px;
+    background-color: blue;
+}
+
 .main-art-middle {
     height: 240px;
     width: 100%;
@@ -29,13 +32,34 @@
     border: 1px solid black;
 }
 
+
+.latest-news {
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 5px;
+}
+
+.latest-news-item {
+
+}
+
 @media screen and (max-width: 764px) {
     .top-header {
         display: none;
     }
 
+    
+}
+
+@media screen and (min-width: 764px) {
     .main-container {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 2fr; 
+        
+    }
+
+    .main-art-top {
+        grid-row: 1 / span 2;
+        background-color: blue;
+        height: 485px;
     }
 }
