@@ -44,6 +44,7 @@
     border: 1px solid burlywood;
     margin: 5px;
     display: flex;
+    flex-direction: row;
 }
 
 .latest-news-items-image {
@@ -81,6 +82,20 @@
     .latest-news {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
+    }
+
+    .latest-news-items {
+        flex-direction: column;
+    }
+
+    .latest-news-items-image {
+        width: 98%;
+        height: 50%;
+    }
+
+    .latest-news-items-text {
+        width: 98%;
+        height: 50%;
     }
 
 }
