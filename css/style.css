@@ -4,3 +4,18 @@
     padding: 0;
 }
 
+.top-header {
+    height: 50px;
+    background-color: aqua;
+}
+
+.lower-header {
+    height: 40px;
+    background-color: brown;
+}
+
+@media screen and (max-width: 764px) {
+    .top-header {
+        display: none;
+    }
+}
