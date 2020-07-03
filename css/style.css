@@ -35,20 +35,35 @@
 
 .latest-news {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: 1fr ;
     grid-gap: 5px;
 }
 
-.latest-news-item {
+.latest-news-items {
+    height: 250px;
+    border: 1px solid burlywood;
+    margin: 5px;
+    display: flex;
+}
 
+.latest-news-items-image {
+    width: 20%;
+    margin: 3px;
+    border: 1px solid red;
+    height: 240px;
+}
+
+.latest-news-items-text {
+    width: 80%;
+    margin: 3px;
+    border: 1px solid red;
+    height: 240px;
 }
 
 @media screen and (max-width: 764px) {
     .top-header {
         display: none;
     }
-
-    
 }
 
 @media screen and (min-width: 764px) {
@@ -62,4 +77,10 @@
         background-color: blue;
         height: 485px;
     }
+
+    .latest-news {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
 }
