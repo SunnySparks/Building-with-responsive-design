@@ -61,7 +61,8 @@
     height: 240px;
 }
 
-.latest-fund-article {
+.latest-fund-article,
+.featured-post-container {
     width: 100%;
     margin: 5px;
     border: 1px solid orange;
@@ -97,6 +98,37 @@
 .funders-hidden {
     display: none;
 }
+
+.featured-post-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    
+}
+
+.featured-post {
+    height: 200px;
+    border: 1px solid grey;
+    margin: 5px;
+}
+
+.latest-deals {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    border: 1px solid gold;
+}
+
+.latest-deals-post {
+    height: 240px;
+    margin: 5px;
+    border: 1px solid olive;
+}
+
+
 
 /*-------HERE START THE MEDIA QUERIES----------*/
 
@@ -175,6 +207,22 @@
 
     .funders-hidden {
         display: inline;
+    }
+
+    .featured-post-container {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .featured-post {
+        height: 500px;
+        border: 1px solid grey;
+        margin: 5px;
+    }
+
+    .latest-deals {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
     }
 
 }
