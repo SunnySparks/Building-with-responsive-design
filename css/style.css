@@ -138,23 +138,22 @@
     }
 
     .latest-fund-article, .funders-container {
-        width: 60%;
+        width: 90%;
         border: 1px solid orange;
-        margin-left: 20%;
-        margin-right: 20%;
         margin-bottom: 20px;
+        margin: 0 auto;
     }
     
     .latest-fund {
         float:left;
-        width: 60%;
+        width: 40%;
         height: 60px;
         background-color: goldenrod;
     }
     
     .latest-fund-nav {
         float: right;
-        width: 35%;
+        width: 60%;
     }
     
     .latest-fund-nav ul, .funders-container {
