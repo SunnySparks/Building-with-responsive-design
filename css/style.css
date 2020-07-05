@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+body {
+    color: #555;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
 .top-header {
     display: none;
 }
@@ -19,8 +25,8 @@
 
 .left-anchors {
     float: left;
-    background-color: rgb(233, 25, 25);
     width: 30%;
+    background-color: red;
     height: inherit;
 }
 .mobile-nav img {
@@ -222,27 +228,55 @@ footer {
 
     .lower-header {
         height: 40px;
-        background-color: brown;
         display: flex;
     }
-    
-    .lower-header ul {
+
+    .left-anchors {
+        float: left;
         width: 80%;
-        margin-left: ;
-        
+        height: inherit;
+        background-color: inherit;
     }
     
+    .right-anchors {
+        float: right;
+        width: 20%;
+        height: inherit;
+    }
+
+    .butt {
+        border: 1px solid rgb(221, 216, 216);
+        width: 50px;
+        height: inherit;
+        float: right;
+    }
+
+    .fa-search {
+        position: relative;
+        top: 10px;
+        margin: 0 auto;
+        left: 15px; 
+        color: rgb(185, 178, 178);
+    }
+        
     .lower-header ul li {
         list-style-type: none;
         margin: 3px;
         float: left;
     }
     
-    /* .lower-header button {
-        float: right;
-        width: 18px;
-        height: 18px;
-    } */
+    .lower-header ul li a {
+        text-decoration: none;
+        font-family: 'Abel', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #aaa;
+        display: block;
+        height: 48px;
+        letter-spacing: .04em;
+        line-height: 1;
+        padding: 15px 10px 0;
+    }
 
     .mobile-nav {
         display: none;
