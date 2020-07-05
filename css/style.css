@@ -21,16 +21,18 @@
     float: left;
     background-color: rgb(233, 25, 25);
     width: 30%;
+    height: inherit;
 }
 .mobile-nav img {
-    width: 125px;
-    margin-top: 10px;
-    margin-left: 9px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .right-anchors {
     float: right;
     width: 70%;
+    height: inherit;
 }
 
 .mobile-nav .right-anchors a {
@@ -54,6 +56,15 @@
     top: 15px;
     margin: 0 auto;
     left: 15px;
+    
+}
+
+.fa-search {
+    color: rgb(185, 178, 178);;
+}
+
+.fa-bars {
+    color: rgb(255, 167, 4);
 }
 
 .main-container{
