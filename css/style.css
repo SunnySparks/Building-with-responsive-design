@@ -5,14 +5,39 @@
 }
 
 .top-header {
-    height: 50px;
-    background-color: aqua;
+    display: none;
 }
 
 .lower-header {
-    height: 40px;
-    background-color: brown;
+    display: none;
 }
+
+.mobile-nav {
+    width: 100%;
+    /* display: flex; */
+    height: 50px;
+}
+.mobile-nav img {
+    width: 125px;
+}
+
+.left-anchors {
+    float: left;
+    width: 20%;
+}
+
+.right-anchors {
+    float: right;
+}
+
+.mobile-nav ul a {
+    align-self: center;
+}
+
+.mobile-nav > a {
+    align-self: center;
+}
+
 .main-container{
     display: grid;
     grid-template-columns: auto;
@@ -31,7 +56,6 @@
     background-color: blue;
     border: 1px solid black;
 }
-
 
 .latest-news {
     display: grid;
@@ -77,8 +101,6 @@
 
 .latest-fund-nav {
     width: 100%;
-    /*height: 100px;
-    background-color: indianred;*/
 }
 
 .latest-fund-nav li {
@@ -161,6 +183,40 @@ footer {
     .main-container {
         grid-template-columns: 2fr 1fr;
         
+    }
+
+    .top-header {
+        height: 50px;
+        background-color: aqua;
+        display: flex;
+    }
+
+    .lower-header {
+        height: 40px;
+        background-color: brown;
+        display: flex;
+    }
+    
+    .lower-header ul {
+        width: 80%;
+        margin-left: ;
+        
+    }
+    
+    .lower-header ul li {
+        list-style-type: none;
+        margin: 3px;
+        float: left;
+    }
+    
+    /* .lower-header button {
+        float: right;
+        width: 18px;
+        height: 18px;
+    } */
+
+    .mobile-nav {
+        display: none;
     }
 
     .main-art-top {
