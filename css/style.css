@@ -14,28 +14,46 @@
 
 .mobile-nav {
     width: 100%;
-    /* display: flex; */
     height: 50px;
-}
-.mobile-nav img {
-    width: 125px;
 }
 
 .left-anchors {
     float: left;
-    width: 20%;
+    background-color: rgb(233, 25, 25);
+    width: 30%;
+}
+.mobile-nav img {
+    width: 125px;
+    margin-top: 10px;
+    margin-left: 9px;
 }
 
 .right-anchors {
     float: right;
+    width: 70%;
 }
 
-.mobile-nav ul a {
-    align-self: center;
+.mobile-nav .right-anchors a {
+    float: right;
 }
 
-.mobile-nav > a {
-    align-self: center;
+.butt,
+.butt1 {
+    width: 49px;
+    height: 49px;
+}
+
+.mobile-nav,
+.butt {
+    border: 1px solid rgb(221, 216, 216);
+}
+
+.fa-search,
+.fa-bars {
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+    left: 15px;
 }
 
 .main-container{
