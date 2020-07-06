@@ -267,8 +267,9 @@ z-index: 4;
 
 .funders {
     width: 100%;
-    height: 180px;
-    margin-bottom: 20px;
+    height: 200px;
+    margin-bottom: 40px;
+    background-color: #ffebe7;
 }
 
 .funders header {
@@ -302,12 +303,27 @@ z-index: 4;
 .img-bg-l {
     background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1267125502885728258%2Fwzo0WIkh.jpg&signature=107cc0db98a0f3d67f05f983afead2f5');
 }
+
 .funders-text {
     float: right;
-    width: 80%;
-    height: 70%;
+    width: 85%;
+    height: 40%;
     border: 1px solid green;
     background-color: #ffebe7;
+}
+
+.funders-text-mid,
+.funders-text-bottom {
+    float: right;
+    width: 100%;
+    background-color: #ffebe7;
+    padding-left: 40px;
+}
+
+.funders-text-bottom {
+    border-top: 1px solid red;
+    height: 50px;
+    padding-top: 10px;
 }
 
 .funders-hidden {
