@@ -266,9 +266,33 @@ z-index: 4;
 
 .funders {
     width: 100%;
-    height: 230px;
+    height: 130px;
     background-color: red;
     margin-bottom: 20px;
+}
+
+.funders header {
+    height: 40px;
+}
+
+.funders header h3 {
+    padding-left: 100px;
+}
+
+.funder-image {
+    float: left;
+    position: relative;
+    top: -25px;
+    width: 20%;
+    height: 50%;
+    border: 1px solid green;
+}
+
+.funders-text {
+    float: right;
+    width: 80%;
+    height: 50%;
+    border: 1px solid green;
 }
 
 .funders-hidden {
