@@ -221,13 +221,46 @@ footer {
     }
 
     .top-header {
-        height: 50px;
-        background-color: aqua;
+        height: 35px;
+        background-color: #000;
         display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
     }
 
+    .top-header ul li {
+        list-style-type: none;
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .top-header ul li a {
+        text-decoration: none;
+        color: #aaa;
+    }
+
+    .top-header ul li .active {
+        color: #fff;
+    }
+
+    .top-header ul li a:hover {
+        color: #fff;
+    }
+
+    .top-left-anchors {
+        margin-left: 20px;
+        height: inherit;
+    }
+
+    .top-right-anchors {
+        margin-right: 25px;
+        height: inherit;
+    }
+    
     .lower-header {
-        height: 40px;
+        height: 45px;
         display: flex;
     }
 
@@ -276,6 +309,10 @@ footer {
         letter-spacing: .04em;
         line-height: 1;
         padding: 15px 10px 0;
+    }
+
+    .lower-header ul li a:hover {
+        color: #333;
     }
 
     .mobile-nav {
