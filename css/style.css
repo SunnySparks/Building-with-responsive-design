@@ -190,7 +190,8 @@ z-index: 4;
     flex-direction: row;
 }
 
-.latest-news-items-image {
+.latest-news-items-image,
+.funder-image {
     width: 80px;
     margin: 3px;
     border: 1px solid red;
@@ -266,13 +267,13 @@ z-index: 4;
 
 .funders {
     width: 100%;
-    height: 130px;
-    background-color: red;
+    height: 180px;
     margin-bottom: 20px;
 }
 
 .funders header {
     height: 40px;
+    background-color: #ff4422;
 }
 
 .funders header h3 {
@@ -283,16 +284,30 @@ z-index: 4;
     float: left;
     position: relative;
     top: -25px;
-    width: 20%;
-    height: 50%;
     border: 1px solid green;
 }
 
+.img-bg-i {
+    background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1275370217191944194%2FDwCOMQ4r.jpg&signature=d40bc78fd49f3278cd2004db0622ba31');
+}
+
+.img-bg-j {
+    background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F722475461121482753%2Foab7vApG.jpg&signature=a13ddb1d0bde7f3433acbd4536be69ed');
+}
+
+.img-bg-k {
+    background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1278312382109016066%2FcViOeyTb.png&signature=5b330847991d3472239ee4b486cbd058');
+}
+
+.img-bg-l {
+    background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1267125502885728258%2Fwzo0WIkh.jpg&signature=107cc0db98a0f3d67f05f983afead2f5');
+}
 .funders-text {
     float: right;
     width: 80%;
-    height: 50%;
+    height: 70%;
     border: 1px solid green;
+    background-color: #ffebe7;
 }
 
 .funders-hidden {
