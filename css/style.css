@@ -73,6 +73,13 @@ body {
     color: rgb(255, 167, 4);
 }
 
+h2,
+h5 {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .main-container{
     display: grid;
     grid-template-columns: auto;
@@ -102,12 +109,27 @@ z-index: 4;
 }
 
 .main-header {
-    color: white;
+    position: absolute;
+    top: 180px;
     z-index: 3;
+    width: 100%;
+    height: auto;
+}
+
+.main-header ul {
+    display: flex;
 }
 
 .main-header ul li{
  list-style-type: none;
+ margin-right: 20px;
+}
+
+.main-header ul li a {
+    text-decoration: none;
+    color: #aaa;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main-art-middle {
