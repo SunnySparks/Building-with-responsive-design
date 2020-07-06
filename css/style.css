@@ -79,6 +79,10 @@ h5 {
     padding-left: 10px;
     padding-right: 10px;
 }
+h3 {
+    padding: 0;
+    margin: 0;
+}
 
 .main-container{
     display: grid;
@@ -87,45 +91,78 @@ h5 {
     margin: 5px 5px 5px 5px;
 }
 
-.main-art-top {
+.main-art-top,
+.main-art-middle,
+.main-art-bottom {
     height: 240px;
 }
 
-.main-background-img {
+.main-background-img,
+.middle-background-img,
+.bottom-background-img {
     position: absolute;
     background-size: cover;
     background-position: 50%;
     height: 240px;
     width: 100%;
+}
+
+.main-background-img {
     background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-iphone-screen-sizes-plotted-796x417.png');
 }
 
-.main-background-gradient{
+.middle-background-img {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/woman-in-grey-shirt-holding-brown-cardboard-box-761999-796x448.jpg');
+}
+
+.bottom-background-img {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/2-6-796x417.jpg');
+}
+
+.main-background-gradient,
+.middle-background-gradient,
+.bottom-background-gradient{
 z-index: 4;
 }
 
-.main-logo {
+.main-logo,
+.middle-logo,
+.bottom-logo {
     z-index: 5;
 }
 
-.main-header {
-    position: absolute;
-    top: 180px;
+.main-header,
+.middle-header,
+.bottom-header {
+    position: relative;
+    top: 160px;
     z-index: 3;
     width: 100%;
     height: auto;
 }
 
-.main-header ul {
+.main-header h2,
+.middle-header h2,
+.bottom-header h2 {
+    font-size: 100%;
+}
+
+.main-header ul,
+.middle-header ul,
+.bottom-header ul {
     display: flex;
 }
 
-.main-header ul li{
+.main-header ul li,
+.middle-header ul li,
+.bottom-header ul li {
  list-style-type: none;
  margin-right: 20px;
 }
 
-.main-header ul li a {
+.main-header ul li a,
+.middle-header ul li a,
+.bottom-header ul li a {
     text-decoration: none;
     color: #aaa;
     padding-left: 10px;
@@ -146,7 +183,7 @@ z-index: 4;
 }
 
 .latest-news-items {
-    height: 250px;
+    height: 90px;
     border: 1px solid burlywood;
     margin: 5px;
     display: flex;
@@ -154,17 +191,52 @@ z-index: 4;
 }
 
 .latest-news-items-image {
-    width: 20%;
+    width: 80px;
     margin: 3px;
     border: 1px solid red;
-    height: 240px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.img-bg-a {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-95-516x270.png');
+}
+
+.img-bg-b {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Luminar-4-Bundle-540x270.jpeg');
+}
+
+.img-bg-c {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Evercable-540x270.png');
+}
+
+.img-bg-d {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-13-516x270.png');
+}
+
+.img-bg-e {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/OnePlus-Nord-514x270.jpg');
+}
+
+.img-bg-f {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-12-516x270.png');
+}
+
+.img-bg-g {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/teslamoon-480x270.jpg');
+}
+
+.img-bg-h {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-ios-clipboard-copying-516x270.png');
 }
 
 .latest-news-items-text {
     width: 80%;
     margin: 3px;
     border: 1px solid red;
-    height: 240px;
+    height: 80px;
 }
 
 .latest-fund-article,
