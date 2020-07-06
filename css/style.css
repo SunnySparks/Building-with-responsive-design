@@ -82,7 +82,32 @@ body {
 
 .main-art-top {
     height: 240px;
-    background-color: blue;
+}
+
+.main-background-img {
+    position: absolute;
+    background-size: cover;
+    background-position: 50%;
+    height: 240px;
+    width: 100%;
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-iphone-screen-sizes-plotted-796x417.png');
+}
+
+.main-background-gradient{
+z-index: 4;
+}
+
+.main-logo {
+    z-index: 5;
+}
+
+.main-header {
+    color: white;
+    z-index: 3;
+}
+
+.main-header ul li{
+ list-style-type: none;
 }
 
 .main-art-middle {
@@ -321,7 +346,6 @@ footer {
 
     .main-art-top {
         grid-row: 1 / span 2;
-        background-color: blue;
         height: 485px;
     }
 
