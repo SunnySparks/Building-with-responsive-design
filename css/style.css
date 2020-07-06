@@ -82,6 +82,7 @@ h5 {
 h3 {
     padding: 0;
     margin: 0;
+    color: #fff;
 }
 
 .main-container{
@@ -101,9 +102,9 @@ h3 {
 .middle-background-img,
 .bottom-background-img {
     position: absolute;
-    background-size: cover;
-    background-position: 50%;
-    height: 240px;
+    background-size: contain;
+    background-position: 50% 50%;
+    height: inherit;
     width: 100%;
 }
 
@@ -172,8 +173,7 @@ z-index: 4;
 .main-art-middle {
     height: 240px;
     width: 100%;
-    background-color: blue;
-    border: 1px solid black;
+    margin: 0 auto;
 }
 
 .latest-news {
@@ -194,7 +194,6 @@ z-index: 4;
 .funder-image {
     width: 80px;
     margin: 3px;
-    border: 1px solid red;
     height: 80px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -242,50 +241,71 @@ z-index: 4;
 
 .latest-fund-article,
 .featured-post-container {
-    width: 100%;
-    margin: 5px;
-    border: 1px solid orange;
+    width: 95%;
+    margin-left: 15px;
+    margin-bottom: 20px;
 }
 
 .latest-fund {
-    width: 100%;
+    width: inherit;
     height: 40px;
-    background-color: goldenrod;
     margin-bottom: 10px;
+    margin-left: -10px;
 }
 
 .latest-fund-nav {
     width: 100%;
 }
 
-.latest-fund-nav li {
+.latest-fund-nav ul li {
     width: 100%;
-    height: 20px;
-    background-color: sandybrown;
     margin-bottom: 4px;
+    list-style-type: none;
+}
+
+.latest-fund-nav ul li a {
+    text-decoration: none;
+    color: #ff4422;
 }
 
 .funders {
-    width: 100%;
-    height: 200px;
+    width: 95%;
+    height: auto;
     margin-bottom: 40px;
-    background-color: #ffebe7;
+    margin-left: 15px;
 }
 
 .funders header {
-    height: 40px;
+    height: 60px;
     background-color: #ff4422;
+    width: 100%;
 }
 
 .funders header h3 {
+    padding-top: 10px;
     padding-left: 100px;
 }
 
 .funder-image {
-    float: left;
     position: relative;
-    top: -25px;
-    border: 1px solid green;
+    top: -45px;
+    left: 10px;
+    max-width: 15%;
+    z-index: 2;
+}
+
+.funders-text {
+    padding-left: 100px;
+    width: 100%;
+    height: 80px;
+    margin-top: -100px;
+    background-color: #ffebe7;
+    z-index: 1;
+    margin-left: 0;
+}
+
+.clear-fix {
+    clear: both;
 }
 
 .img-bg-i {
@@ -304,26 +324,22 @@ z-index: 4;
     background-image: url('https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1267125502885728258%2Fwzo0WIkh.jpg&signature=107cc0db98a0f3d67f05f983afead2f5');
 }
 
-.funders-text {
-    float: right;
-    width: 85%;
-    height: 40%;
-    border: 1px solid green;
-    background-color: #ffebe7;
-}
-
-.funders-text-mid,
-.funders-text-bottom {
-    float: right;
+.funders-text-mid p,
+.funders-text-bottom p {
+   
     width: 100%;
-    background-color: #ffebe7;
-    padding-left: 40px;
+    background-color: inherit;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.funders-text-mid {
+    margin-bottom: 15px;
 }
 
 .funders-text-bottom {
-    border-top: 1px solid red;
-    height: 50px;
-    padding-top: 10px;
+    border-top: 1px solid rgb(235, 117, 117);
+    margin-left: 10px;
 }
 
 .funders-hidden {
