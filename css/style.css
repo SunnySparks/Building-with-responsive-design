@@ -111,12 +111,23 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.bottom-background-img2 {
+.bottom-background-img2,
+.bottom-background-img3,
+.bottom-background-img4,
+.bottom-background-img5,
+.bottom-background-img6,
+.bottom-background-img7,
+.bottom-background-img8,
+.bottom-background-img9,
+.bottom-background-img10 {
     position: absolute;
     background-size: cover;
     height: inherit;
     width: 92%;
     background-repeat: no-repeat;
+}
+
+.bottom-background-img2 {
     background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-iphone-screen-sizes-plotted-796x417.png');
 }
 
@@ -182,7 +193,8 @@ z-index: 4;
     padding-right: 10px;
 }
 
-.latest-news {
+.latest-news,
+.latest-deals {
     display: grid;
     grid-template-columns: 1fr ;
     grid-gap: 5px;
@@ -190,7 +202,8 @@ z-index: 4;
     margin: 0 auto;
 }
 
-.latest-news-items {
+.latest-news-items,
+.latest-deals-items {
     height: 90px;
     margin: 5px;
     display: flex;
@@ -198,7 +211,8 @@ z-index: 4;
 }
 
 .latest-news-items-image,
-.funder-image {
+.funder-image,
+.latest-deals-items-image {
     width: 80px;
     margin: 3px;
     height: 80px;
@@ -239,7 +253,8 @@ z-index: 4;
     background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-ios-clipboard-copying-516x270.png');
 }
 
-.latest-news-items-text {
+.latest-news-items-text,
+.latest-deals-items-text {
     width: 80%;
     margin: 3px;
     height: 80px;
@@ -333,7 +348,6 @@ z-index: 4;
 
 .funders-text-mid p,
 .funders-text-bottom p {
-   
     width: 90%;
     background-color: inherit;
     margin-left: 40px;
@@ -375,12 +389,6 @@ z-index: 4;
     height: auto;
 }
 
-.latest-deals-post {
-    height: 240px;
-    margin: 5px;
-    border: 1px solid olive;
-}
-
 footer {
     width: 95%;
     margin: 0 auto;
@@ -401,8 +409,166 @@ footer {
     width: 100%;
 }
 
+.red-footer {
+    width: 100%;
+}
 
+.red-footer header{
+    margin-left: 5px;
+    float: left;
+    background-color: #fff4f2;
+    width: 100%;
+    display: flex;
+}
 
+.red-footer-text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.red-footer h5 {
+    color: black;
+}
+
+.red-footer span {
+    padding-left: 10px;
+    width: 100%;
+}
+
+.red-footer-background,
+.red-footer-background2,
+.red-footer-background3,
+.red-footer-background4,
+.red-footer-background5,
+.red-footer-background6,
+.red-footer-background7,
+.red-footer-background8,
+.red-footer-background9 {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.red-footer-background {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/woman-in-grey-shirt-holding-brown-cardboard-box-761999.jpg');
+}
+
+.red-footer ul {
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-position: inside;
+}
+
+.red-footer li {
+    border-bottom: 1px solid grey;
+    color: red;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.red-footer li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.bottom-background-img3 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/editors_dark-mode_screen-lineup-368x276.jpg');
+}
+
+.bottom-background-img4 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Google_Pixel_5_-_3_2048x2048-368x276.jpg');
+}
+
+.bottom-background-img5 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-quickly-turn-on-Night-Shift-on-iOS-368x276.png');
+}
+
+.bottom-background-img6 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/Fallout-76-hed-368x276.jpg');
+}
+
+.bottom-background-img7 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Featured-Image-The-Next-Web-368x276.jpg');
+}
+
+.bottom-background-img8 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg');
+}
+
+.bottom-background-img9 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Facebook-Discover-368x276.jpg');
+}
+
+.bottom-background-img10 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-iphone-screen-sizes-plotted-368x276.png');
+}
+
+.red-footer-background2 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-12TzzNLc2QM-unsplash-e1594100243463.jpg');
+}
+
+.red-footer-background3 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-iphone-screen-sizes-plotted.png');
+}
+
+.red-footer-background4 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-....png');
+}
+
+.red-footer-background5 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-1.jpg');
+}
+
+.red-footer-background6 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/digital-stalker.png');
+}
+
+.red-footer-background7 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/post-man-pat-car-ev-royal-mail-levc-cab-delivery-vehicle.jpg');
+}
+
+.red-footer-background8 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/JioMart-WhatsApp-Ordering-hed.jpg');
+}
+
+.red-footer-background9 {
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/teslamoon.jpg');
+}
+
+.img-bg-m {
+    background-image: url('https://cdnp2.stackassets.com/6179061a340aec6fb745648722689d80eb1f1165/store/f861de62ba66a53247f38806f00d41550a956e426fc22b7963aafc23c1b3/sale_28210_primary_image.jpg');
+}
+
+.img-bg-n {
+    background-image: url('https://cdnp3.stackassets.com/99d7d1e5ccb73bcde062e3916e2911421d061ae8/store/d14b6d2307dfa4481c65eb7b16ba2f90029feacc334febca7e3e206b31b4/sale_29690_primary_image.jpg');
+}
+
+.img-bg-o {
+    background-image: url('https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg');
+}
+
+.img-bg-p {
+    background-image: url('https://cdnp3.stackassets.com/1e92f54e3984c22ee5038489509892cc35a5ef6a/store/03216828414317932febc3029b34c67f0a2e6987d44f0602357e9d9ec560/sale_28070_primary_image.jpg');
+}
+
+.img-bg-q {
+    background-image: url('https://cdnp2.stackassets.com/de4a193171a0bccdb92ddba0b719f1b93831e489/store/c78e4c9dcc1128ece7d2d2d7e92fc7fb9aff2820cd9c67fce6590914d7f3/sale_31217_primary_image.jpg');
+}
+
+.img-bg-r {
+    background-image: url('https://cdnp1.stackassets.com/e5814c7482460a462c26d06b517066a1086cdf70/store/10ebcfc38f40fac5c072e3863fef177ecbe48b5e2f3075c55ecf09597d51/sale_27421_primary_image.jpg');
+}
+
+.img-bg-s {
+    background-image: url('https://cdnp2.stackassets.com/749fa23340b2f542a4e5b9d52f1350cc7b7fdaa9/store/d29589e4d9a9be6147b58c3b6fabcd0fa8f69cdc62eb4759e844f41b756c/sale_31095_primary_image.jpg');
+}
+
+.img-bg-t {
+    background-image: url('https://cdnp3.stackassets.com/278f4766db16b246a83ade07d6e32f9d96bb58a8/store/8756becc423f4a2009f0c1a8ff45b7f42163acbbb218d2793ee1ece9e131/sale_29427_primary_image.jpg');
+}
 /*-------HERE START THE MEDIA QUERIES----------*/
 
 @media screen and (max-width: 764px) {
@@ -521,21 +687,25 @@ footer {
         height: 485px;
     }
 
-    .latest-news {
+    .latest-news,
+    .latest-deals {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
     }
 
-    .latest-news-items {
+    .latest-news-items,
+    .latest-deals-items {
         flex-direction: column;
     }
 
-    .latest-news-items-image {
+    .latest-news-items-image,
+    .latest-deals-items-image {
         width: 98%;
         height: 50%;
     }
 
-    .latest-news-items-text {
+    .latest-news-items-text,
+    .latest-deals-items-text {
         width: 98%;
         height: 50%;
     }
