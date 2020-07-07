@@ -10,6 +10,15 @@ body {
     min-height: 100vh;
 }
 
+.header-container {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 95%;
+    left: 5px;
+    background-color: #fff;
+}
+
 .top-header {
     display: none;
 }
@@ -86,12 +95,16 @@ h3 {
 }
 
 .main-container{
+    position: relative;
+    top: 45px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
     width: 98%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    z-index: 2;
 }
 
 .main-art-top,
@@ -107,8 +120,12 @@ h3 {
     position: absolute;
     background-size: cover;
     height: inherit;
-    width: 98%;
+    width: 97%;
     background-repeat: no-repeat;
+}
+
+.featured-post .main-art-bottom {
+    height: 255px;
 }
 
 .bottom-background-img2,
@@ -122,8 +139,8 @@ h3 {
 .bottom-background-img10 {
     position: absolute;
     background-size: cover;
-    height: inherit;
-    width: 92%;
+    height: 250px;
+    width: 94%;
     background-repeat: no-repeat;
 }
 
@@ -159,7 +176,7 @@ z-index: 4;
 .middle-header,
 .bottom-header {
     position: relative;
-    top: 160px;
+    top: 155px;
     z-index: 3;
     width: 100%;
     height: auto;
@@ -264,8 +281,7 @@ z-index: 4;
 .featured-post-container {
     width: 95%;
     margin-left: 15px;
-    margin-bottom: 20px;
-    border: 1px solid yellow;
+    margin-bottom: 30px;
 }
 
 .latest-fund {
@@ -293,7 +309,6 @@ z-index: 4;
 .funders {
     width: 95%;
     height: auto;
-    margin-bottom: 40px;
     margin-left: 15px;
 }
 
@@ -371,13 +386,40 @@ z-index: 4;
     display: grid;
     grid-template-columns: auto;
     grid-gap: 5px;
+    margin-top: 10px;
     
 }
 
 .featured-post {
-    height: 600px;
-    border: 1px solid grey;
-    margin: 5px;
+    height: 625px;
+    margin-top: 30px;
+}
+
+.featured-post h2 {
+    margin-left: -10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.latest-deals h2 a,
+.latest-news h2 a,
+.latest-fund h2 a,
+.featured-post h2 a {
+    color: #f42;
+    text-decoration: none;
+}
+
+.featured-post h2 a:hover {
+    color: #000;
+}
+
+.featured-post header {
+    top: 150px;
+}
+
+.featured-post header h2 {
+    font-size: initial;
 }
 
 .latest-deals {
@@ -396,39 +438,100 @@ footer {
 
 .partners {
     height: 150px;
-    background-color: palegreen;
-    border: 1px solid green;
+    background-color: rgb(44, 39, 39);
     margin: 0 auto;
     width: 100%;
 }
 
+.social-icon {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 35px;
+}
+
+.social-icon a {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    background-color: grey;
+    
+}
+
+.social-icon a:hover {
+    background-color: rgb(54, 50, 50);
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 65px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.footer-nav ul li {
+    list-style-type: none;
+}
+
+.footer-nav ul li a {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.footer-nav ul li a:hover {
+    color: #fff;
+}
+
 .copyright {
     height: 100px;
-    background-color: orchid;
-    border: 1px solid green;
+    background-color: rgb(0, 0, 0);
     width: 100%;
+}
+
+.copyright p {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    font-weight: 600;
+    color: grey;
+}
+
+.copyright img {
+    width: 40px;
 }
 
 .red-footer {
     width: 100%;
+    margin-top: 10px;
+    height: auto;
 }
 
 .red-footer header{
-    margin-left: 5px;
     float: left;
     background-color: #fff4f2;
-    width: 100%;
+    width: 99%;
     display: flex;
+    margin-bottom: 15px;
 }
 
 .red-footer-text {
     display: flex;
     flex-direction: column;
     width: 85%;
+    margin-top: 5px;
 }
 
 .red-footer h5 {
     color: black;
+    margin-top: 15px;
 }
 
 .red-footer span {
@@ -449,7 +552,7 @@ footer {
     height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .red-footer-background {
@@ -457,13 +560,15 @@ footer {
 }
 
 .red-footer ul {
-    margin-left: 10px;
-    margin-right: 10px;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
     list-style-position: inside;
+    margin-top: 5px;
 }
 
 .red-footer li {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(241, 235, 235);
     color: red;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -713,7 +818,7 @@ footer {
     .latest-fund-article, .funders-container {
         width: 90%;
         border: 1px solid orange;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         margin: 0 auto;
     }
     
@@ -753,12 +858,6 @@ footer {
     .featured-post-container {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
-    }
-
-    .featured-post {
-        height: 500px;
-        border: 1px solid grey;
-        margin: 5px;
     }
 
     .latest-deals {
