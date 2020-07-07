@@ -8,6 +8,8 @@ body {
     color: #555;
     line-height: 1.5;
     min-height: 100vh;
+    min-width: 320px;
+    max-width: 764px;
 }
 
 .header-container {
@@ -682,7 +684,12 @@ footer {
     }
 }
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 764px) and (max-width:1024px) {
+    body {
+        min-width: 765px;
+        max-width: 1024px;
+    }
+
     .main-container {
         grid-template-columns: 2fr 1fr;
         
@@ -864,5 +871,9 @@ footer {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
     }
+
+}
+
+@media screen and (min-width:1025px) {
 
 }
