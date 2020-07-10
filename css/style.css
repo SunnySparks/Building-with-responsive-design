@@ -812,7 +812,7 @@
     }
   
     .main-background-img {
-      width: 885px;
+      width: 66%;
       background-size: cover;
       background-position: 0 0;
       background-repeat: no-repeat;
@@ -825,7 +825,7 @@
       mix-blend-mode: lighten;
       pointer-events: none;
       position: absolute;
-      width: 886px;
+      width: 66%;
       height: 440px;
       z-index: 4;
     }
@@ -833,7 +833,7 @@
     .middle-background-img,
     .bottom-background-img {
       background-size: cover;
-      width: 437px;
+      width: 32.5%;
     }
   
     main {
