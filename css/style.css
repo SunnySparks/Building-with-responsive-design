@@ -1,3 +1,5 @@
+    /* #region Mobile version */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +7,8 @@
   }
   
   body {
+    min-width: 320px;
+    max-width: 767px;
     color: #555;
     line-height: 1.5;
     min-height: 100vh;
@@ -686,15 +690,18 @@
     width: 40px;
   }
   
-  /* Media Query Starts Here */
+  /* #endregion */
 
-  @media screen and (max-width: 764px) {
-    .top-header {
-      display: none;
-    }
-  }
+  /* #region medium screen */
   
-  @media screen and (min-width: 764px) and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    body {
+        min-width: 764px;
+        max-width: 1023px;
+        background-color: blueviolet;
+      }
+    
     .top-header {
       height: 35px;
       background-color: #000;
@@ -875,8 +882,8 @@
   
     .latest-news,
     .latest-deals {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       width: 100%;
       top: 5px;
     }
@@ -961,12 +968,12 @@
     }
   
     .funders-hidden {
-      display: inline;
+      display: none;
     }
   
     .featured-post-container {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       margin-bottom: 0;
     }
   
@@ -996,11 +1003,11 @@
       margin-left: 30px;
     }
   
-    .latest-deals {
+    /* .latest-deals {
       grid-template-columns: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
       grid-gap: 0;
-    }
+    } */
   
     .latest-deals-items {
       height: 280px;
@@ -1037,4 +1044,358 @@
       top: 130px;
     }
   }
+
+  /* #endregion */
   
+  /* #region large screen */
+
+  @media screen and (min-width: 1023px) {
+    body {
+        min-width: 1024px;
+        max-width: 100%;
+      }
+
+    .top-header {
+        height: 35px;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+      }
+    
+      .top-header ul li {
+        list-style-type: none;
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+    
+      .top-header ul li a {
+        text-decoration: none;
+        color: #aaa;
+      }
+    
+      .top-header ul li .active {
+        color: #fff;
+      }
+    
+      .top-header ul li a:hover {
+        color: #fff;
+      }
+    
+      .top-left-anchors {
+        margin-left: 20px;
+        height: inherit;
+      }
+    
+      .top-right-anchors {
+        margin-right: 25px;
+        height: inherit;
+      }
+    
+      .lower-header {
+        height: 45px;
+        display: flex;
+        width: 100%;
+      }
+    
+      .left-anchors-one {
+        float: left;
+        width: 80%;
+        height: inherit;
+        background-color: inherit;
+      }
+    
+      .right-anchors-one {
+        float: right;
+        width: 20%;
+        height: inherit;
+      }
+    
+      .butt {
+        border: 1px solid rgb(221, 216, 216);
+        width: 50px;
+        height: inherit;
+        float: right;
+      }
+    
+      .fa-search {
+        position: relative;
+        top: 10px;
+        margin: 0 auto;
+        left: 15px;
+        color: rgb(185, 178, 178);
+      }
+    
+      .lower-header ul li {
+        list-style-type: none;
+        margin: 3px;
+        float: left;
+      }
+    
+      .lower-header ul li a {
+        text-decoration: none;
+        font-family: "Abel", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #aaa;
+        display: block;
+        height: 48px;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        padding: 15px 10px 0;
+      }
+    
+      .lower-header ul li a:hover {
+        color: #333;
+      }
+    
+      .mobile-nav {
+        display: none;
+      }
+    
+      .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        position: relative;
+        top: 80px;
+        margin: 5px;
+        width: 100%;
+        height: 450px;
+      }
+    
+      .main-art-top {
+        grid-row: 1 / span 2;
+        width: 99%;
+        height: 445px;
+      }
+    
+      .main-background-img {
+        width: 66%;
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+    
+      .main-background-gradient {
+        background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        mix-blend-mode: lighten;
+        pointer-events: none;
+        position: absolute;
+        width: 66%;
+        height: 440px;
+        z-index: 4;
+      }
+    
+      .middle-background-img,
+      .bottom-background-img {
+        background-size: cover;
+        width: 32.5%;
+      }
+    
+      main {
+        width: 90%;
+        margin: 0 auto;
+        top: 80px;
+      }
+    
+      .main-art-middle {
+        height: 215px;
+        margin-left: 0;
+        width: 98%;
+      }
+    
+      .main-art-bottom-two,
+      .main-art-bottom {
+        margin: 0;
+        height: 215px;
+        width: 98%;
+      }
+    
+      .red-footer {
+        margin-top: 40px;
+      }
+    
+      .main-art-middle header,
+      .main-art-bottom header {
+        top: 120px;
+      }
+    
+      .deals h2 a,
+      .news h2 a {
+        margin-left: -24px;
+      }
+    
+      .funds-head > h2 {
+        padding-left: 10px;
+      }
+    
+      .latest-news,
+      .latest-deals {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        top: 5px;
+      }
+    
+      .latest-news-items {
+        height: auto;
+      }
+    
+      .latest-news-items,
+      .latest-deals-items {
+        flex-direction: column;
+      }
+    
+      .latest-news-items-image,
+      .latest-deals-items-image {
+        width: 98%;
+        min-height: 200px;
+      }
+    
+      .latest-news-items-text,
+      .latest-deals-items-text {
+        width: 98%;
+        height: 200px;
+      }
+    
+      .latest-fund-article,
+      .funders-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+    
+      .latest-fund-nav {
+        width: 100%;
+        height: 44px;
+      }
+    
+      .funds-head {
+        float: left;
+        width: 50%;
+        height: 44px;
+      }
+    
+      .fund-list {
+        float: left;
+        width: 50%;
+        height: 44px;
+      }
+    
+      .funder-image {
+        max-width: 30%;
+      }
+    
+      .latest-fund-nav ul {
+        float: right;
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+      }
+    
+      .latest-fund-nav li {
+        list-style-type: none;
+      }
+    
+      .fund-list ul li a {
+        text-align: right;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding: 10px;
+      }
+    
+      .funders-container {
+        display: flex;
+        height: 380px;
+      }
+    
+      .funders,
+      .funders-hidden {
+        width: 100%;
+        height: 230px;
+        margin: 12px;
+      }
+    
+      .funders-hidden {
+        display: inline;
+      }
+    
+      .featured-post-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 0;
+      }
+    
+      .featured-post {
+        height: 670px;
+      }
+    
+      .deals {
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+      }
+    
+      .funds,
+      .featured-post-container {
+        margin-top: 0;
+        top: 0;
+      }
+    
+      .news {
+        width: 100%;
+        margin-top: 0;
+      }
+    
+      .news h2,
+      .deals h2 {
+        margin-left: 30px;
+      }
+    
+      .latest-deals {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 0;
+      }
+    
+      .latest-deals-items {
+        height: 280px;
+      }
+    
+      .latest-deals-items-image {
+        background-size: cover;
+        height: 250px;
+      }
+    
+      .bottom-background-img2,
+      .bottom-background-img3,
+      .bottom-background-img4,
+      .bottom-background-img5,
+      .bottom-background-img6,
+      .bottom-background-img7,
+      .bottom-background-img8,
+      .bottom-background-img9,
+      .bottom-background-img10 {
+        height: 253px;
+        width: 32.6%;
+      }
+    
+      .social-icon {
+        width: 30%;
+      }
+    
+      .footer-nav {
+        width: 40%;
+        margin: 0 auto;
+      }
+    
+      footer {
+        top: 130px;
+      }
+  }
+
+  /* #endregion */
