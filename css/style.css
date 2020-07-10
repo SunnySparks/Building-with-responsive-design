@@ -893,13 +893,13 @@
     .latest-news-items-image,
     .latest-deals-items-image {
       width: 98%;
-      height: 200px;
+      min-height: 200px;
     }
   
     .latest-news-items-text,
     .latest-deals-items-text {
       width: 98%;
-      height: auto;
+      height: 200px;
     }
   
     .latest-fund-article,
@@ -1003,7 +1003,7 @@
     }
   
     .latest-deals-items {
-      height: 250px;
+      height: 280px;
     }
   
     .latest-deals-items-image {
@@ -1034,7 +1034,7 @@
     }
   
     footer {
-      top: 90px;
+      top: 130px;
     }
   }
   
