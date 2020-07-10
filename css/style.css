@@ -699,7 +699,7 @@
     body {
         min-width: 764px;
         max-width: 1023px;
-        background-color: blueviolet;
+        background-color: rgb(231, 201, 221);
       }
     
     .top-header {
@@ -808,14 +808,14 @@
       position: relative;
       top: 80px;
       margin: 5px;
-      width: 100%;
+      width: 99%;
       height: 450px;
     }
   
     .main-art-top {
       grid-row: 1 / span 2;
       width: 99%;
-      height: 445px;
+      height: 272px;
     }
   
     .main-background-img {
@@ -841,16 +841,17 @@
     .bottom-background-img {
       background-size: cover;
       width: 32.5%;
+      height: 135px;
     }
   
     main {
       width: 90%;
       margin: 0 auto;
-      top: 80px;
+      top: -80px;
     }
   
     .main-art-middle {
-      height: 215px;
+      height: 33px;
       margin-left: 0;
       width: 98%;
     }
@@ -859,7 +860,7 @@
     .main-art-bottom {
       margin: 0;
       height: 215px;
-      width: 98%;
+      width: 100%;
     }
   
     .red-footer {
@@ -868,7 +869,7 @@
   
     .main-art-middle header,
     .main-art-bottom header {
-      top: 120px;
+      top: 0;
     }
   
     .deals h2 a,
@@ -906,7 +907,7 @@
     .latest-news-items-text,
     .latest-deals-items-text {
       width: 98%;
-      height: 200px;
+      height: auto;
     }
   
     .latest-fund-article,
@@ -1028,7 +1029,7 @@
     .bottom-background-img9,
     .bottom-background-img10 {
       height: 253px;
-      width: 32.6%;
+      width: 49%;
     }
   
     .social-icon {
@@ -1041,7 +1042,7 @@
     }
   
     footer {
-      top: 130px;
+      top: -30px;
     }
   }
 
@@ -1211,7 +1212,7 @@
       .main-art-bottom-two,
       .main-art-bottom {
         margin: 0;
-        height: 215px;
+        height: 220px;
         width: 98%;
       }
     
@@ -1221,7 +1222,7 @@
     
       .main-art-middle header,
       .main-art-bottom header {
-        top: 120px;
+        top: 60px;
       }
     
       .deals h2 a,
@@ -1252,14 +1253,14 @@
     
       .latest-news-items-image,
       .latest-deals-items-image {
-        width: 98%;
-        min-height: 200px;
+        width: 100%;
+        min-height: 150px;
       }
     
       .latest-news-items-text,
       .latest-deals-items-text {
         width: 98%;
-        height: 200px;
+        height: auto;
       }
     
       .latest-fund-article,
@@ -1331,7 +1332,7 @@
       }
     
       .featured-post {
-        height: 670px;
+        height: auto;
       }
     
       .deals {
