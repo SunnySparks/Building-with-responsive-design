@@ -1107,19 +1107,19 @@
     }
     
     .lower-header {
-        /*position: fixed;*/
+        margin-left: 20px;
         height: 45px;
         display: flex;
     }
 
-    .left-anchors {
+    .left-anchors-one {
         float: left;
         width: 80%;
         height: inherit;
         background-color: inherit;
     }
     
-    .right-anchors {
+    .right-anchors-one {
         float: right;
         width: 20%;
         height: inherit;
@@ -1176,12 +1176,14 @@
         position: static;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 10px;
         width: 100%;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-areas: 
         "at am"
         "at ab";
+        height: 500px;
     }
 
     .main-art-top {
@@ -1197,7 +1199,7 @@
         background: -webkit-linear-gradient(121deg, rgba(200,49,119,0.8337710084033614) 0%, rgba(255,164,0,0.6825105042016807) 21%, rgba(255,68,34,0.6208858543417367) 50%, rgba(10,10,10,0.6516981792717087) 94%);
         background: linear-gradient(121deg, rgba(200,49,119,0.8337710084033614) 0%, rgba(255,164,0,0.6825105042016807) 21%, rgba(255,68,34,0.6208858543417367) 50%, rgba(10,10,10,0.6516981792717087) 94%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c83177",endColorstr="#0a0a0a",GradientType=1);
-        height: 485px;
+        height: 550px;
         z-index: 3;
         width: 66%;
         position: absolute;
@@ -1213,7 +1215,7 @@
     }
     
     .main-background-img {
-        height: 485px;
+        height: 550px;
         width: 66%;
         position: absolute;
     }
@@ -1232,6 +1234,7 @@
     #main-art-bottom {
         grid-area: ab;
         width: 30%;
+        margin: 0;
     }
 
     .main-date h6 {
@@ -1263,7 +1266,8 @@
     z-index: 4;
     width: 100%;
     height: auto;
-    top: 440px;
+    top: 510px;
+    margin-left: 20px;
     }
 
     .main-header h2 {
@@ -1277,14 +1281,16 @@
 
     .middle-header {
         top: 250px;
+
+        margin-left: 20px;
     }
 
     .middle-header,
     #main-bottom-header{
     position: absolute;
     z-index: 3;
-    width: 100%;
     height: auto;
+    width: 100%;
     }
 
     .middle-header h2,
@@ -1317,8 +1323,13 @@
     }
 
     #main-bottom-header {
-        top: 470px;
+        top: 540px;
+        margin-left: 10px;
     }
+
+    .bottom-background-img {
+      height: 280px;
+  }
 
     .news {
       width: 70%;
@@ -1335,7 +1346,7 @@
       grid-gap: 20px;
         grid-template-areas: 
         "li-a li-b li-c li-d"
-        "li-e li-f li-g li-h"
+        "li-e li-f li-g li-h";
     }
 
     .latest-deals {
@@ -1376,7 +1387,7 @@
 
     .latest-news-items-text {
       width: 70%;
-      height: 50px;
+      height: 100px;
     }
 
 
@@ -1425,41 +1436,42 @@
         margin: 0 auto;
     }
 
-    .latest-fund {
+    .funds-head {
         text-align: start;
     }
 
-    .latest-fund-article {
+    .latest-fund-nav {
         grid-area: lfa;
         text-align: end;
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
+        justify-content: space-between;
     }
 
-    .latest-fund-nav {
+    .fund-list {
         padding-top: 10px;
     }
 
-    .latest-fund-nav ul {
+    .fund-list ul {
         display: flex;
         flex-direction: row;
     }
 
 
-    .latest-fund-nav li:nth-child(2) {
+    .fund-list li:nth-child(2) {
         border-left: 1px solid red;
         border-right: 1px solid red;
         padding-left: 21px;
     }
 
-    .latest-fund-nav li:nth-child(1),
-    .latest-fund-nav li:nth-child(2) {
-        padding-right: 35px;
+    .fund-list li:nth-child(1),
+    .fund-list li:nth-child(2) {
+        padding-right: 15px;
     }
 
-    .latest-fund-nav li:nth-child(3) {
-        padding-right: 61px;
+    .fund-list li:nth-child(3) {
+        padding-left: 15px;
     }
 
 /*    .funders {
@@ -1474,7 +1486,10 @@
         width: 100%;
         margin-bottom: 60px;
         grid-gap: 20px;
-        background-color: #fffaf8;
+    }
+
+    .funders {
+      background-color: #fffaf8;
     }
 
     .funder-image {
@@ -1519,8 +1534,8 @@
     .bottom-background-img10 {
         position: absolute;
         background-size: cover;
-        height: 250px;
-        width: 386px;
+        height: 270px;
+        width: 421.4px;
         background-repeat: no-repeat;
         z-index: -1;
     }
@@ -1538,7 +1553,7 @@
     }
 
     .featured-post header {
-      top: 110px;
+      top: 140px;
     }
 
     .bottom-header2,
@@ -1571,7 +1586,7 @@
     }
 
     #bottom-header-long {
-        top:100px;
+        top:140px;
     }
 
     .red-footer-text h5 {
