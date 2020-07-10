@@ -8,8 +8,6 @@ body {
     color: #555;
     line-height: 1.5;
     min-height: 100vh;
-    min-width: 320px;
-    max-width: 764px;
 }
 
 .header-container {
@@ -102,7 +100,14 @@ h3 {
     margin: 0;
 }
 
-.main-container{
+main {
+    position: relative;
+    top: 70px;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.main-container {
     position: relative;
     top: 55px;
     display: grid;
@@ -120,6 +125,13 @@ h3 {
     width: 97.90%;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.main-art-bottom-two {
+    height: 260px;
+    width: 97.90%;
+    /* margin-left: 5px;
+    margin-right: 5px; */
 }
 
 .main-background-img,
@@ -158,7 +170,7 @@ h3 {
 }
 
 .main-background-img {
-    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-iphone-screen-sizes-plotted-796x417.png');
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg');
 }
 
 .middle-background-img {
@@ -219,22 +231,19 @@ z-index: 4;
     padding-right: 10px;
 }
 
+.deals {
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+}
+
 footer,
 .latest-news,
 .funds,
-.latest-deals,
 .featured-post-container {
     position: relative;
-    top: 70px;
+    top: 20px;
 }
-
-/* .latest-news {
-    top: 70px;
-}
-
-.funds {
-    top: 80px;
-} */
 
 .latest-news,
 .latest-deals {
@@ -322,7 +331,6 @@ footer,
 }
 
 .latest-fund-nav ul li {
-    width: 100%;
     margin-bottom: 4px;
     list-style-type: none;
 }
@@ -415,23 +423,23 @@ footer,
 }
 
 .featured-post {
-    height: 625px;
-    margin-top: 10px;
+    height: auto;
+    margin-top: 0;
 }
 
 .featured-post h2 {
-    margin-left: -5px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 30px;
 }
 
-.latest-deals h2 a,
-.latest-news h2 a,
-.latest-fund h2 a,
+.deals h2 a,
+.news h2 a,
+.funds-head h2 a,
 .featured-post h2 a {
     color: #f42;
     text-decoration: none;
+    margin-left: -10px;
 }
 
 .featured-post h2 a:hover {
@@ -457,7 +465,7 @@ footer,
 
 .red-footer {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0;
     height: auto;
 }
 
@@ -707,16 +715,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 764px) and (max-width:1024px) {
-    body {
-        min-width: 765px;
-        max-width: 1024px;
-    }
-
-    .main-container {
-        grid-template-columns: 2fr 1fr;
-        
-    }
+@media screen and (min-width: 764px) and (min-width: 1024px) {
 
     .top-header {
         height: 35px;
@@ -760,16 +759,17 @@ footer {
     .lower-header {
         height: 45px;
         display: flex;
+        width: 100%;
     }
 
-    .left-anchors {
+    .left-anchors-one {
         float: left;
         width: 80%;
         height: inherit;
         background-color: inherit;
     }
     
-    .right-anchors {
+    .right-anchors-one {
         float: right;
         width: 20%;
         height: inherit;
@@ -817,15 +817,94 @@ footer {
         display: none;
     }
 
+    .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        position: relative;
+        top: 80px;
+        margin: 5px;
+        width: 100%;
+        height: 450px;
+    }
+
     .main-art-top {
         grid-row: 1 / span 2;
-        height: 485px;
+        width: 99%;
+        height: 445px;
+    }
+
+    .main-background-img {
+        width: 885px;
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+    .main-background-gradient {
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+    position: absolute;
+    width: 886px;
+    height: 440px;
+    z-index: 4;
+    }
+    
+    .middle-background-img,
+    .bottom-background-img {
+        background-size: cover;
+        width: 437px;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+        top: 80px;
+    }
+
+    .main-art-middle {
+        height: 215px;
+        margin-left: 0;
+        width: 98%;
+    }
+
+    .main-art-bottom-two,
+    .main-art-bottom {
+        margin: 0;
+        height: 215px;
+        width: 98%;
+    }
+
+    .red-footer {
+        margin-top: 40px;
+    }
+
+    .main-art-middle header,
+    .main-art-bottom header {
+        top: 120px;
+    }
+
+    .deals h2 a,
+    .news h2 a {
+    margin-left: -34px;
+    }
+
+    .funds-head > h2 {
+        padding-left: 20px;
     }
 
     .latest-news,
     .latest-deals {
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        top: 5px;
+    }
+
+    .latest-news-items {
+        height: auto;
     }
 
     .latest-news-items,
@@ -836,48 +915,68 @@ footer {
     .latest-news-items-image,
     .latest-deals-items-image {
         width: 98%;
-        height: 50%;
+        height: 200px;
     }
 
     .latest-news-items-text,
     .latest-deals-items-text {
         width: 98%;
-        height: 50%;
+        height: auto;
     }
 
     .latest-fund-article, .funders-container {
-        width: 90%;
-        border: 1px solid orange;
-        margin-bottom: 5px;
+        width: 100%;
         margin: 0 auto;
     }
-    
-    .latest-fund {
-        float:left;
-        width: 40%;
-        height: 60px;
-        background-color: goldenrod;
-    }
-    
+
     .latest-fund-nav {
-        float: right;
-        width: 60%;
+        width: 100%;
+        height: 44px;
     }
     
-    .latest-fund-nav ul, .funders-container {
+    .funds-head {
+        float:left;
+        width: 50%;
+        height: 44px;
+    }
+
+    .fund-list {
+        float:left;
+        width: 50%;
+        height: 44px;
+    }
+    
+    .funder-image {
+        max-width: 30%;
+    }
+
+    .latest-fund-nav ul {
+        float: right;
         display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        margin-top: 10px;
     }
 
     .latest-fund-nav li {
-        height: 60px;
-        background-color: sandybrown;
         list-style-type: none;
+    }
+
+    .fund-list ul li a {
+        text-align: right;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding: 10px;
+    }
+
+    .funders-container {
+        display: flex;
+        height: 380px;
     }
 
     .funders, .funders-hidden {
         width: 100%;
         height: 230px;
-        background-color: red;
         margin: 12px;
     }
 
@@ -886,22 +985,81 @@ footer {
     }
 
     .featured-post-container {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 0;
+    }
+
+    .featured-post {
+        height: 670px;
+    }
+
+    .deals {
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .funds,
+    .featured-post-container {
+        margin-top: 0;
+        top: 0;
+    }
+
+    .news {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .news h2,
+    .deals h2 {
+        margin-left: 30px;
     }
 
     .latest-deals {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
+        grid-gap: 0;
+
     }
 
-    /* footer {
-        width: 100%;
+    .latest-deals-items {
+        height: 250px;
+    }
+
+    .latest-deals-items-image {
+        background-size: cover;
+        height: 250px;
+    }
+
+    .bottom-background-img2,
+    .bottom-background-img3,
+    .bottom-background-img4,
+    .bottom-background-img5,
+    .bottom-background-img6,
+    .bottom-background-img7,
+    .bottom-background-img8,
+    .bottom-background-img9,
+    .bottom-background-img10 {
+    height: 253px;
+    width: 32.6%;
+}
+
+    .social-icon {
+        width: 30%;
+    }
+
+    .footer-nav {
+        width: 40%;
         margin: 0 auto;
-    } */
+    }
+
+    footer {
+        top: 90px;
+    }
 
 }
 
-@media screen and (min-width:1025px) {
+/* @media screen and (min-width:1025px) {
 
-}
+} */
