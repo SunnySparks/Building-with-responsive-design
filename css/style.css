@@ -191,6 +191,7 @@
     z-index: 3;
     width: 100%;
     height: auto;
+    padding-left: 10px;
   }
   
   .main-header ul,
@@ -1221,7 +1222,7 @@
     
       .main-art-middle header,
       .main-art-bottom header {
-        top: 120px;
+        top: 100px;
       }
     
       .deals h2 a,
