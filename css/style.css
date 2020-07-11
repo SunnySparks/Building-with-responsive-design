@@ -55,15 +55,18 @@ p {
 
 .right-anchors {
   float: right;
-  width: 77%;
+  width: 60%;
   height: inherit;
 }
 
 .social-icon a {
   border-radius: 50%;
-  padding: 10px;
+  padding: 9px;
   color: #fff;
-  background-color: grey;
+  text-align: center;
+  background: #333;
+  width: 40px;
+  height: 40px;
 }
 
 .deals h2 a,
@@ -367,6 +370,7 @@ footer,
 
 .latest-fund-nav {
   width: 100%;
+  margin-left: 16px;
 }
 
 .latest-fund-nav ul li {
@@ -378,6 +382,7 @@ footer,
   width: 95%;
   height: auto;
   margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 .funders header {
@@ -443,7 +448,7 @@ footer,
 
 .funders-text-bottom {
   border-top: 1px solid rgb(235, 117, 117);
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .funders-hidden {
@@ -653,9 +658,10 @@ footer {
 
 .partners {
   height: 150px;
-  background-color: rgb(44, 39, 39);
+  background: #131313;
   margin: 0 auto;
   width: 100%;
+  border: 2px solid #131313;
 }
 
 .social-icon {
@@ -715,6 +721,18 @@ footer {
     max-width: 1023px;
   }
 
+  .top-header-container {
+    height: 80px;
+    padding-left: 106px;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 32px rgba(0,0,0,.15);
+    right: 0;
+    top: 0;
+    z-index: 10;
+    left: 0;
+  }
+
   .top-header {
     height: 35px;
     background-color: #000;
@@ -722,6 +740,18 @@ footer {
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
+    max-height: 35px;
+  }
+
+  .logo-image {
+    background-image:  url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1594198358");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
 
   .deals h2 a,
@@ -774,7 +804,7 @@ footer {
   }
 
   .top-left-anchors {
-    margin-left: 20px;
+    margin-left: 85px;
     height: inherit;
   }
 
@@ -791,9 +821,10 @@ footer {
 
   .left-anchors-one {
     float: left;
-    width: 80%;
+    width: 100%;
     height: inherit;
     background-color: inherit;
+    margin-left: 83px;
   }
 
   .right-anchors-one {
@@ -954,17 +985,20 @@ footer {
   .latest-fund-nav {
     width: 100%;
     height: 44px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 45px;
   }
 
   .funds-head {
     float: left;
-    width: 50%;
+    width: 100%;
     height: 44px;
   }
 
   .fund-list {
     float: left;
-    width: 50%;
+    width: 53%;
     height: 44px;
   }
 
@@ -1154,6 +1188,7 @@ footer {
     width: 80%;
     height: inherit;
     background-color: inherit;
+    margin-left: 18px;
   }
 
   .right-anchors-one {
