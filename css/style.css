@@ -1089,15 +1089,15 @@ footer {
     margin-left: -24px;
   }
 
+  .latest-fund-nav li {
+    list-style-type: none;
+  }
+
   .top-header ul li {
     list-style-type: none;
     float: left;
     margin-left: 10px;
     margin-top: 5px;
-  }
-
-  .latest-fund-nav li {
-    list-style-type: none;
   }
 
   .fund-list ul li a {
