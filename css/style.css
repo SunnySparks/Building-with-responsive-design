@@ -59,6 +59,29 @@ p {
   height: inherit;
 }
 
+.main-header ul li a,
+.middle-header ul li a,
+.bottom-header ul li a {
+  text-decoration: none;
+  color: #aaa;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.latest-fund-nav ul li a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.deals h2 a,
+.news h2 a,
+.funds-head h2 a,
+.featured-post h2 a {
+  color: #f42;
+  text-decoration: none;
+  margin-left: 0;
+}
+
 .mobile-nav .right-anchors a {
   float: right;
 }
@@ -217,15 +240,6 @@ main {
   margin-right: 20px;
 }
 
-.main-header ul li a,
-.middle-header ul li a,
-.bottom-header ul li a {
-  text-decoration: none;
-  color: #aaa;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .deals {
   position: relative;
   top: 0;
@@ -330,11 +344,6 @@ footer,
   list-style-type: none;
 }
 
-.latest-fund-nav ul li a {
-  text-decoration: none;
-  color: #ff4422;
-}
-
 .funders {
   width: 95%;
   height: auto;
@@ -343,7 +352,7 @@ footer,
 
 .funders header {
   height: 60px;
-  background-color: #ff4422;
+  background-color: #f42;
   width: 100%;
 }
 
@@ -426,15 +435,6 @@ footer,
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 30px;
-}
-
-.deals h2 a,
-.news h2 a,
-.funds-head h2 a,
-.featured-post h2 a {
-  color: #f42;
-  text-decoration: none;
-  margin-left: 0;
 }
 
 .featured-post h2 a:hover {
@@ -705,8 +705,7 @@ footer {
   width: 40px;
 }
 
-  
-  /* #endregion */
+/* #endregion */
 
 /* #region medium screen */
 
