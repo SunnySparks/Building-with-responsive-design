@@ -75,6 +75,11 @@ p {
   margin-left: 0;
 }
 
+.red-footer li a {
+  text-decoration: none;
+  color: gray;
+}
+
 .footer-nav ul li a {
   font-size: 0.8em;
   text-decoration: none;
@@ -92,11 +97,6 @@ p {
   color: red;
   padding-top: 3px;
   padding-bottom: 3px;
-}
-
-.red-footer li a {
-  text-decoration: none;
-  color: gray;
 }
 
 .main-header ul li a,
