@@ -59,15 +59,6 @@ p {
   height: inherit;
 }
 
-.main-header ul li a,
-.middle-header ul li a,
-.bottom-header ul li a {
-  text-decoration: none;
-  color: #aaa;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .latest-fund-nav ul li a {
   text-decoration: none;
   color: #f42;
@@ -80,6 +71,27 @@ p {
   color: #f42;
   text-decoration: none;
   margin-left: 0;
+}
+
+.red-footer li {
+  border-bottom: 1px solid rgb(241, 235, 235);
+  color: red;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.red-footer li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.main-header ul li a,
+.middle-header ul li a,
+.bottom-header ul li a {
+  text-decoration: none;
+  color: #aaa;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .mobile-nav .right-anchors a {
@@ -518,18 +530,6 @@ footer,
   list-style-position: inside;
   margin-top: 5px;
   font-family: "Raleway", sans-serif;
-}
-
-.red-footer li {
-  border-bottom: 1px solid rgb(241, 235, 235);
-  color: red;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.red-footer li a {
-  text-decoration: none;
-  color: gray;
 }
 
 .bottom-background-img3 {
