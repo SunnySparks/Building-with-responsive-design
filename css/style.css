@@ -59,9 +59,22 @@ p {
   height: inherit;
 }
 
-.latest-fund-nav ul li a {
+.footer-nav ul li a {
+  font-size: 0.8em;
   text-decoration: none;
-  color: #f42;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.social-icon a {
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  background-color: grey;
+}
+
+.social-icon a:hover {
+  background-color: rgb(54, 50, 50);
 }
 
 .deals h2 a,
@@ -71,6 +84,11 @@ p {
   color: #f42;
   text-decoration: none;
   margin-left: 0;
+}
+
+.latest-fund-nav ul li a {
+  text-decoration: none;
+  color: #f42;
 }
 
 .red-footer li {
@@ -649,17 +667,6 @@ footer {
   top: 35px;
 }
 
-.social-icon a {
-  border-radius: 50%;
-  padding: 10px;
-  color: #fff;
-  background-color: grey;
-}
-
-.social-icon a:hover {
-  background-color: rgb(54, 50, 50);
-}
-
 .footer-nav ul {
   display: flex;
   justify-content: space-between;
@@ -672,13 +679,6 @@ footer {
 
 .footer-nav ul li {
   list-style-type: none;
-}
-
-.footer-nav ul li a {
-  font-size: 0.8em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: grey;
 }
 
 .footer-nav ul li a:hover {
