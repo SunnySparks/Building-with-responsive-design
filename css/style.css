@@ -724,6 +724,22 @@ footer {
     flex-direction: row;
   }
 
+  .deals h2 a,
+  .news h2 a {
+    margin-left: -24px;
+  }
+
+  .latest-fund-nav li {
+    list-style-type: none;
+  }
+
+  .fund-list ul li a {
+    text-align: right;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 10px;
+  }
+
   .top-header ul li {
     list-style-type: none;
     float: left;
@@ -738,6 +754,19 @@ footer {
 
   .top-header ul li .active {
     color: #fff;
+  }
+
+  .lower-header ul li a {
+    text-decoration: none;
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #aaa;
+    display: block;
+    height: 48px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 15px 10px 0;
   }
 
   .top-header ul li a:hover {
@@ -803,19 +832,6 @@ footer {
     list-style-type: none;
     margin: 3px;
     float: left;
-  }
-
-  .lower-header ul li a {
-    text-decoration: none;
-    font-family: "Abel", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #aaa;
-    display: block;
-    height: 48px;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    padding: 15px 10px 0;
   }
 
   .lower-header ul li a:hover {
@@ -896,11 +912,6 @@ footer {
     top: 0;
   }
 
-  .deals h2 a,
-  .news h2 a {
-    margin-left: -24px;
-  }
-
   .funds-head > h2 {
     padding-left: 10px;
   }
@@ -967,17 +978,6 @@ footer {
     width: 100%;
     flex-direction: row-reverse;
     margin-top: 10px;
-  }
-
-  .latest-fund-nav li {
-    list-style-type: none;
-  }
-
-  .fund-list ul li a {
-    text-align: right;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    padding: 10px;
   }
 
   .funders-container {
@@ -1065,9 +1065,8 @@ footer {
   }
 }
 
-
 /* #endregion */
-  
+
 /* #region large screen */
 
 @media screen and (min-width: 1023px) {
@@ -1085,6 +1084,11 @@ footer {
     flex-direction: row;
   }
 
+  .deals h2 a,
+  .news h2 a {
+    margin-left: -24px;
+  }
+
   .top-header ul li {
     list-style-type: none;
     float: left;
@@ -1095,6 +1099,19 @@ footer {
   .top-header ul li a {
     text-decoration: none;
     color: #aaa;
+  }
+
+  .lower-header ul li a {
+    text-decoration: none;
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #aaa;
+    display: block;
+    height: 48px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 15px 10px 0;
   }
 
   .top-header ul li .active {
@@ -1164,19 +1181,6 @@ footer {
     list-style-type: none;
     margin: 3px;
     float: left;
-  }
-
-  .lower-header ul li a {
-    text-decoration: none;
-    font-family: "Abel", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #aaa;
-    display: block;
-    height: 48px;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    padding: 15px 10px 0;
   }
 
   .lower-header ul li a:hover {
@@ -1258,11 +1262,6 @@ footer {
   .main-art-middle header,
   .main-art-bottom header {
     top: 100px;
-  }
-
-  .deals h2 a,
-  .news h2 a {
-    margin-left: -24px;
   }
 
   .funds-head > h2 {
