@@ -726,7 +726,7 @@ footer {
     padding-left: 106px;
     position: absolute;
     background: #fff;
-    box-shadow: 0 0 32px rgba(0,0,0,.15);
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
     right: 0;
     top: 0;
     z-index: 10;
@@ -744,7 +744,7 @@ footer {
   }
 
   .logo-image {
-    background-image:  url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1594198358");
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1594198358");
     background-repeat: no-repeat;
     background-size: cover;
     width: 80px;
