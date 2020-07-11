@@ -13,6 +13,10 @@
     line-height: 1.5;
     min-height: 100vh;
   }
+
+  p {
+    font-family: "Abel", sans-serif;
+  }
   
   .header-container {
     position: fixed;
@@ -90,6 +94,11 @@
   h3,
   h5 {
     color: #fff;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h4 {
+    font-family: 'Raleway', sans-serif;
   }
   
   main {
@@ -187,7 +196,7 @@
   .middle-header,
   .bottom-header {
     position: relative;
-    top: 155px;
+    top: 140px;
     z-index: 3;
     width: 100%;
     height: auto;
@@ -198,6 +207,7 @@
   .middle-header ul,
   .bottom-header ul {
     display: flex;
+    font-family: 'Raleway', sans-serif;
   }
   
   .main-header ul li,
@@ -467,11 +477,13 @@
     flex-direction: column;
     width: 85%;
     margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .red-footer h5 {
     color: black;
     margin-top: 15px;
+    padding-left: 10px;
   }
   
   .red-footer span {
@@ -505,6 +517,7 @@
     margin-right: 5px;
     list-style-position: inside;
     margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
   }
   
   .red-footer li {
@@ -654,6 +667,7 @@
     top: 65px;
     margin: 0 auto;
     width: 60%;
+    font-family: "Abel", sans-serif;
   }
   
   .footer-nav ul li {
@@ -774,6 +788,17 @@
       margin: 0 auto;
       left: 15px;
       color: rgb(185, 178, 178);
+    }
+
+    h2,
+    h3,
+    h5 {
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+    }
+  
+    h4 {
+      font-family: 'Raleway', sans-serif;
     }
   
     .lower-header ul li {
@@ -1128,6 +1153,17 @@
         left: 15px;
         color: rgb(185, 178, 178);
       }
+
+      h2,
+      h3,
+      h5 {
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+      }
+    
+      h4 {
+        font-family: 'Raleway', sans-serif;
+      }
     
       .lower-header ul li {
         list-style-type: none;
@@ -1154,6 +1190,10 @@
     
       .mobile-nav {
         display: none;
+      }
+
+      .main-header {
+        top: 350px;
       }
     
       .main-container {
@@ -1211,7 +1251,7 @@
     
       .main-art-bottom-two,
       .main-art-bottom {
-        margin: 0;
+        margin: 0;x
         height: 215px;
         width: 98%;
       }
@@ -1332,7 +1372,7 @@
       }
     
       .featured-post {
-        height: 670px;
+        height: 690px;
       }
     
       .deals {
