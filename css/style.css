@@ -59,22 +59,11 @@ p {
   height: inherit;
 }
 
-.footer-nav ul li a {
-  font-size: 0.8em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: grey;
-}
-
 .social-icon a {
   border-radius: 50%;
   padding: 10px;
   color: #fff;
   background-color: grey;
-}
-
-.social-icon a:hover {
-  background-color: rgb(54, 50, 50);
 }
 
 .deals h2 a,
@@ -84,6 +73,13 @@ p {
   color: #f42;
   text-decoration: none;
   margin-left: 0;
+}
+
+.footer-nav ul li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
 }
 
 .latest-fund-nav ul li a {
@@ -114,6 +110,10 @@ p {
 
 .mobile-nav .right-anchors a {
   float: right;
+}
+
+.social-icon a:hover {
+  background-color: rgb(54, 50, 50);
 }
 
 .butt,
