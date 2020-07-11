@@ -1096,6 +1096,17 @@ footer {
     margin-top: 5px;
   }
 
+  .latest-fund-nav li {
+    list-style-type: none;
+  }
+
+  .fund-list ul li a {
+    text-align: right;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 10px;
+  }
+
   .top-header ul li a {
     text-decoration: none;
     color: #aaa;
@@ -1330,17 +1341,6 @@ footer {
     width: 100%;
     flex-direction: row-reverse;
     margin-top: 10px;
-  }
-
-  .latest-fund-nav li {
-    list-style-type: none;
-  }
-
-  .fund-list ul li a {
-    text-align: right;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    padding: 10px;
   }
 
   .funders-container {
